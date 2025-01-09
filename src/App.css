@@ -5,3 +5,13 @@
   padding: 10px;
   border: 1px dashed blue;
 }
+
+.active-class {
+  color: white;
+  background-color: green;
+}
+
+.inactive-class {
+  color: black;
+  background-color: lightgray;
+}
