@@ -1,18 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-// const Counter = () => {
-//     // 有状态的数据
-//   const [counter, setCounter] = useState(0);
-//   // setInterval
-// //   setTimeout(() => {
-// //     setCounter(counter + 1)
-// //     console.log('我触发了页面更新')
-// //   }, 1000);
+const Counter = () => {
+    // 有状态的数据
+  const [counter, setCounter] = useState(0);
+  // setInterval
+  // 涉及到异步的操作  我们可以使用useEffect setTimeout 可以用来模拟后端接口调用
+  useEffect(()=>{
+    setTimeout(() => {
+      setCounter(counter + 1)
+      console.log('我触发了页面更新')
+    }, 1000);
+  },[counter])
+  
 
-//   return <div>{counter}</div>;
-// };
+  return <div>{counter}</div>;
+};
 
-// export default Counter;
+export default Counter;
 
 // function test(count){
 //     const counter = count
@@ -27,37 +31,37 @@ import { useState } from "react";
 // const [a,b] = res
 // console.log(a,b)
 
-const Counter = () => {
-  const [counter, setCounter] = useState(0);
-  const [msg, setMsg] = useState("hi");
-  //   函数 useState（0）
+// const Counter = () => {
+//   const [counter, setCounter] = useState(0);
+//   const [msg, setMsg] = useState("hi");
+//   //   函数 useState（0）
 
-  // 这里可以进行简写
-  const handleClick = () => {
-    console.log("clicked");
-    setCounter(counter + 1);
-  };
-  function handleMsg() {
-    setMsg("hello");
-  }
+//   // 这里可以进行简写
+//   const handleClick = () => {
+//     console.log("clicked");
+//     setCounter(counter + 1);
+//   };
+//   function handleMsg() {
+//     setMsg("hello");
+//   }
 
-  function test() {
-    // 逻辑
-    return ()=>{
-        console.log(1);
-    }
-  }
+//   function test() {
+//     // 逻辑
+//     return ()=>{
+//         console.log(1);
+//     }
+//   }
 
 
-  return (
-    <div>
-      <div>{msg}</div>
-      <button onClick={test()}>click me</button>
-      <div>{counter}</div>
+//   return (
+//     <div>
+//       <div>{msg}</div>
+//       <button onClick={test()}>click me</button>
+//       <div>{counter}</div>
 
-      <button onClick={handleClick}>plus</button>
-    </div>
-  );
-};
+//       <button onClick={handleClick}>plus</button>
+//     </div>
+//   );
+// };
 
-export default Counter;
+// export default Counter;

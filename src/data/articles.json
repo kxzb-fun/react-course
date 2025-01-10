@@ -1,0 +1,38 @@
+{
+    "articles": [
+      {
+        "id": 1,
+        "title": "深入浅出 React 路由",
+        "summary": "了解 React Router 的基础用法与高级技巧。",
+        "content": "React Router 是一个用于在 React 应用中实现客户端路由的库。它提供了丰富的组件，如 <BrowserRouter>、<Route>、<Link> 等，让开发者能够轻松实现路由功能。",
+        "publishedAt": "2025-01-10",
+        "author": {
+          "name": "张三",
+          "email": "zhangsan@example.com"
+        }
+      },
+      {
+        "id": 2,
+        "title": "React 状态管理的进化",
+        "summary": "从 useState 到 Redux Toolkit，看 React 状态管理的演进。",
+        "content": "在 React 开发中，状态管理一直是一个重要的话题。React 的 useState 钩子适合管理局部状态，而像 Redux 或 Context API 更适合管理全局状态。在本文中，我们将探索从 useState 到 Redux Toolkit 的演进。",
+        "publishedAt": "2025-01-05",
+        "author": {
+          "name": "李四",
+          "email": "lisi@example.com"
+        }
+      },
+      {
+        "id": 3,
+        "title": "React 性能优化的实战技巧",
+        "summary": "学习如何使用 React.memo 和 useMemo 提升组件性能。",
+        "content": "React 提供了 React.memo 和 useMemo 两个工具，帮助开发者优化组件性能。React.memo 可防止不必要的组件重新渲染，而 useMemo 可缓存计算结果。本文将通过实际案例，演示如何使用它们。",
+        "publishedAt": "2024-12-30",
+        "author": {
+          "name": "王五",
+          "email": "wangwu@example.com"
+        }
+      }
+    ]
+  }
+  
