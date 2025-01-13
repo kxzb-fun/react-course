@@ -1,0 +1,34 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "李四",
+            "email": "lisi@example.com",
+            "bio": "前端开发工程师，热爱 JavaScript 和 React。",
+            "joinedAt": "2024-12-15",
+            "articles": [
+                {
+                    "id": 1,
+                    "title": "深入浅出 React 路由"
+                },
+                {
+                    "id": 2,
+                    "title": "高效管理 React 状态"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "王五",
+            "email": "wangwu@example.com",
+            "bio": "全栈开发工程师，关注 Node.js 和性能优化。",
+            "joinedAt": "2023-06-10",
+            "articles": [
+                {
+                    "id": 3,
+                    "title": "使用 Express 搭建高性能服务"
+                }
+            ]
+        }
+    ]
+}
