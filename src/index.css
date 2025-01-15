@@ -1,0 +1,11 @@
+.test {
+  /* 重置所有默认样式 */
+  all: unset;
+  /* 设置自己的样式 */
+  font-size: 20px;
+  margin: 0;
+  display: block;
+}
+.fancy {
+  border: 1px dotted red;
+}
