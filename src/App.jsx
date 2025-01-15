@@ -1,28 +1,12 @@
-import { BrowserRouter as Router, Route, Routes, Link, useRoutes } from "react-router-dom";
-import routes from "./routes/index";
-const App = () => {
-  // const renderRoutes = (routeArray) => {
-  //   console.log(routeArray);
-  //   return routeArray.map(({ path, element, children }) => (
-  //     <Route key={path} path={path} element={element}>
-  //       {/* 递归调用了 路由渲染 */}
-  //       {children && renderRoutes(children)}
-  //     </Route>
-  //   ));
-  // };
-  const RoutesComponent=()=> useRoutes(routes);
-
-  return (
-    <>
-      <Router>
-        <nav>
-          <Link to="/">首页</Link> | <Link to="/about">关于</Link>
-        </nav>
-        {/* <Routes>{renderRoutes(routes)}</Routes> */}
-        <RoutesComponent />
-      </Router>
-    </>
-  );
-};
+const App = ()=> {
+  return <>
+  <div>
+      <h1>Hello World</h1>
+      <button className="border-2	 border-dashed">click me</button>
+      <p className="bg-red-200 text-lg">这是p标签</p>
+      <div className="rounded-md border-solid border-2">123</div>
+    </div>
+  </>
+}
 
 export default App;
