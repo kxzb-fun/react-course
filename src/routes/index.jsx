@@ -30,16 +30,17 @@
 
 import articleRoutes from "./modules/article";
 import userRoutes from "./modules/user";
-import homeRoutes from './modules/home';
+// import homeRoutes from './modules/home';
 import aboutRoutes from "./modules/about";
-// import Home from "../views/Home";
+import Home from "../views/Home";
 
-// const indexRoutes = [
-//   {
-//     path: "/",
-//     element: <Home />,
-//   },
-// ];
-const routes = [...articleRoutes, ...userRoutes, ...homeRoutes,...aboutRoutes];
+const indexRoutes = [
+  {
+    path: "/",
+    element: <Home />,
+  },
+];
+
+const routes = [...articleRoutes, ...userRoutes, ...indexRoutes,...aboutRoutes];
 
 export default routes;
