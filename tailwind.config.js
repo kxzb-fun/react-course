@@ -86,6 +86,6 @@ export default {
   },
   plugins: [daisyui, tailwindcssAnimate],
   daisyui: {
-    themes: ["dark", "cupcake", "light"],
+    themes: ["light", "cupcake", "dark"],
   },
 };
