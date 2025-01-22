@@ -33,7 +33,7 @@ export default function FAQList() {
     console.log(index)
     setIsOpen(index)
   }
-  const [isOpen, setIsOpen] = useState(-1);
+  const [isOpen, setIsOpen] = useState(-1);// index -1    012
 
   return (
     <div>

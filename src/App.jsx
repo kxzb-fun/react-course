@@ -1,4 +1,3 @@
-// import FAQList from "./components/FAQList"
 import Counter from "./components/Counter";
 import { useState } from "react";
 const App = () => {

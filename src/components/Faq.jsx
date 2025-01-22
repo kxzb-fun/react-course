@@ -13,6 +13,19 @@ function FAQItem({ qa }) {
   );
 }
 
+// function fun(){
+//   const data = {a:1,b:1}
+//   return data
+// }
+// const aObj  = fun()
+// const bObj  = fun()
+
+// console.log(aObj)
+// aObj.a = 100
+
+// console.log(bObj.a)
+
+
 export default function FAQList() {
   const faqData = [
     {
