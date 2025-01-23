@@ -1,15 +1,11 @@
-import Counter from "./components/Counter";
-import { useState } from "react";
+import TaskApp from "./components/TaskApp/TaskApp";
+import TaskAppReducer from "./components/TaskAppReducer/TaskApp";
+// import { useState } from "react";
 const App = () => {
-  const [myColor, setMyColor] = useState(false);
   return (
     <>
-      <Counter />
-      {myColor ? <Counter myColor={myColor} /> : <Counter/>} 
-
-      <div>
-        <button onClick={()=>setMyColor(true)}>change color</button>
-      </div>
+      <TaskApp />
+      <TaskAppReducer/>
     </>
   );
 };

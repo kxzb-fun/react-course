@@ -12,7 +12,7 @@ export default function AddTask({ onAddTask }) {
       <button onClick={() => {
         setText('');
         onAddTask(text);
-      }}>Add</button>
+      }}>Add 添加</button>
     </>
   )
 }
