@@ -1,13 +1,12 @@
-// 目前，Heading 组件从 props 中读取 level：
-// 删掉 level 参数并从你刚刚引入的 LevelContext 中读取值：
 import { useContext } from "react";
-import { LevelContext } from "./LevelContext.jsx";
+import { LevelContext } from "./LevelContext";
 // export default function Heading({ level, children }) {
 export default function Heading({ children }) {
-  // 此时的level 已经不是从props 里面传递的参数了
-  const level = useContext(LevelContext);
-  console.log(level);
-  switch (level) {
+  // 此时的levle 不需要从组价中传递
+  // useContext 告诉 React Heading 组件想要读取 level 的值 就是我们定义的这个变量LevelContext。
+  const abc = useContext(LevelContext)
+  console.log('context two abc: ',abc)
+  switch (abc) {
     case 1:
       return <h1>{children}</h1>;
     case 2:
@@ -21,6 +20,6 @@ export default function Heading({ children }) {
     case 6:
       return <h6>{children}</h6>;
     default:
-      throw Error("未知的 level：" + level);
+      throw Error("未知的 level：" + abc);
   }
 }
